@@ -1,0 +1,9 @@
+{
+  "name": "iot-challenge-02",
+  "version": "0.0.0",
+  "bin": "./source",
+  "private": true,
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
