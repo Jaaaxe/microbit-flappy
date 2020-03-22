@@ -5,5 +5,7 @@
   "private": true,
   "author": "",
   "license": "Apache-2.0",
-  "dependencies": {}
+  "dependencies": {
+    "microbit": "lancaster-university/microbit"
+  }
 }
