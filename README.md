@@ -87,10 +87,10 @@ Try to compile the hex or download the file and try again OR reset the microbit.
 You can find the reset button located on the back.
 
 ### Microbit is not detected on your computer
-Try using a different micro USD cable or connect it to a different computer.
+Try using a different micro USB cable or connect it to a different computer.
 
 ### Microbit won't power on
-Check to see if your micro USD cable works or if the batteries in the external\
+Check to see if your micro USB cable works or if the batteries in the external\
 power pack need to be replaced.
 
 ### I have another issue 
