@@ -26,11 +26,12 @@ DEALINGS IN THE SOFTWARE.
 
 * UFCFVK-15-2 Internet of Things
 * Challenge 02
-* Description: Flappy Bird game implemented on the BBC Micro:bit
+* Description: The game flappy bird reinvented for a microbit with communication
+               in order to show the real time score using a second microbit
 * File: main.cpp
-* Author: Ismath Ibrahim (S1900094)          
+* Authors: Mariyam Yasmeen (S1800367) & Ismath Ibrahim (S1900094)          
 * Version: 0.0.0 
-* Modified: 12 March 2020              
+* Modified: 23 March 2020              
 */
 
 
