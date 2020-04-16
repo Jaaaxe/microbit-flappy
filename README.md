@@ -27,7 +27,7 @@ You can either connect the batteries to the microbits or plug them into two USB 
 Connect a crocodile cable from the P0 contact of one microbit to the P0 contact of another.\
 Similiarly connect a crocodile cable from the GND contact of one microbit to the GND contact\
 of the other. The microbit set to be the sender will show the game while the microbit set\
-to receive messages will flash 'score' and the numbers will increase as the bit progresses\
+to receive messages will start at 0 and the numbers will increase as the bit progresses\
 in the game. 
 
 ## How to install the game on your Micro:bit
@@ -77,7 +77,7 @@ show the latest score.
 
 ## Warnings
 Make sure that your crocodile cables are making a stable connection in order for it\
-to work properly
+to work properly and connected to the correct contacts. 
 
 ## Troubleshooting
 If you are unable to play the game try one of the following fixes:
