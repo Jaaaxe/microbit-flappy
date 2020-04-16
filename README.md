@@ -41,26 +41,28 @@ in the game.
 ### Building from source (Online)
 
 1. Create an mbedOS account at [ide.mbed.com](ide.mbed.com).
-2. Open up the mbedOS compiler and create a new empty program.
+2. Open up the mbedOS compiler and create two new empty programs.
 3. Head to import and search for "microbit".
 4. Import the library that has the tags: dal, lancaster, microbit.
-5. Create a new file called main.cpp and copy paste the code from the main in this repo.
-6. Click Compile. A *.hex file will be downloaded.
-7. Copy the downloaded the sender file into one Microbit and the receiver into the other.
-8. Start Playing!  
+5. Create new files called main.cpp in both projects.
+6. Copy paste the code from the main.cpp in Sender directory to one and Reciever directory to the other
+7. Click Compile for each prohect. Two *.hex files will be downloaded.
+8. Copy the downloaded the sender hex into one Microbit and the receiver hex into the other.
+9. Start Playing!  
 
 ### Building from source (Offline)
 1. Install the Yotta build system with the instructions found [here](http://docs.yottabuild.org/#installing).
 2. Create a new folder for your project.
 3. Open the newly created folder in the terminal and type `yotta init` to initialise a new yotta project.
-4. Download the main.cpp file from this repository and copy it into the source folder in your yotta project.
+4. Download the main.cpp file from the Sender or Receiver directory and copy it into the source folder in your yotta project.
 5. Run the following commands on your project folder:  
     `yotta target bbc-microbit-classic-gcc`  
     `yotta install lancaster-university/microbit`  
     `yotta build`  
 6. A *.hex file should be generated at "\build\bbc-microbit-classic-gcc\Source" within your project folder.
 7. Copy the *.hex file into your Microbit.
-8. Start Playing!  
+8. The same steps need to be performed separately for the Sender and the Receiver.
+9. Start Playing!  
 
 ## Micro:Bit Usage
 Sender Microbit will display the game world as the bird moves between pipes. \
