@@ -52,17 +52,11 @@ in the game.
 
 ### Building from source (Offline)
 1. Install the Yotta build system with the instructions found [here](http://docs.yottabuild.org/#installing).
-2. Create a new folder for your project.
-3. Open the newly created folder in the terminal and type `yotta init` to initialise a new yotta project.
-4. Download the main.cpp file from the Sender or Receiver directory and copy it into the source folder in your yotta project.
-5. Run the following commands on your project folder:  
-    `yotta target bbc-microbit-classic-gcc`  
-    `yotta install lancaster-university/microbit`  
-    `yotta build`  
-6. A *.hex file should be generated at "\build\bbc-microbit-classic-gcc\Source" within your project folder.
-7. Copy the *.hex file into your Microbit.
-8. The same steps need to be performed separately for the Sender and the Receiver.
-9. Start Playing!  
+2. Clone this repository.
+3. Open the Sender and the Receiver folders in the terminal and run the command `yotta build` in each folder.
+4. Build files should be generated at "\build\bbc-microbit-classic-gcc\Source" within each of the folders.
+5. Copy the {project name}-combined.hex file to their respective Microbits.
+6. Start Playing!  
 
 ## Micro:Bit Usage
 Sender Microbit will display the game world as the bird moves between pipes. \
