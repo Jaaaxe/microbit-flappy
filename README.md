@@ -1,4 +1,4 @@
-# IoT Challenge 2
+# IoT Challenge II
 Implement a simple communication protocol that transmits data between 2 BBC Micro:bit devices, using GPIOs.
 
 **Author**: Mariyam Yasmeen (S1800367) & Ismath Ibrahim (S1900094)\
@@ -17,10 +17,10 @@ score which is what makes games like this popular. The same logic can be used fo
 any game or application using two microbits, where you can have one of them dedicated\
 to showing the real-time score. 
 
-## What do you need?
-* Two microbits
-* Two crocodile cables
-* Micro USB cable to transfer the game
+## Before we begin, lets get our gear ready
+* Two microbits (One of the game, the other for the scoreboard)
+* Two crocodile cables (Because two crocs are better than one)
+* Type Micro USB cable to transfer the game hex
 
 ## The Setup
 You can either connect the batteries to the microbits or plug them into two USB ports.\
@@ -32,31 +32,33 @@ in the game.
 
 ## How to install the game on your Micro:bit
 
-### Copying the hex file
-1. Download the flappy-bird.hex file from this repository.
-2. Connect your microbit to your computer.
+### Flashing the hex file
+1. First, download the flappy-bird.hex file in this repo.
+2. Plug your microbit into your computer.
 3. Copy the sender file into one microbit and receiver file into the other.  
 4. Start Playing!
 
 ### Building from source (Online)
 
-1. Create an mbedOS account at [ide.mbed.com](ide.mbed.com).
-2. Open up the mbedOS compiler and create two new empty programs.
-3. Head to import and search for "microbit".
-4. Import the library that has the tags: dal, lancaster, microbit.
-5. Create new files called main.cpp in both projects.
-6. Copy paste the code from the main.cpp in Sender directory to one and Reciever directory to the other
-7. Click Compile for each prohect. Two *.hex files will be downloaded.
-8. Copy the downloaded the sender hex into one Microbit and the receiver hex into the other.
+Mbed has an [online compiler](https://ide.mbed.com/compiler/) which makes it easy for you to build your project.
+
+1. First you need to get an [mbed](ide.mbed.com) account.
+2. Once you're logged in, open the compiler and create a new empty program.
+3. Click import from the toolbar and search for "Microbit".
+4. Import the lancaster DAL library.
+5. Create your project's main.cpp file.
+6. Take the code in main.cpp that's located in this repo and copy it into your main.
+7. You can now hit the Compile button which will auto download a *.hex file.
+8. Plug your Microbit and flash the hex file into it.
 9. Start Playing!  
 
 ### Building from source (Offline)
 1. Install the Yotta build system with the instructions found [here](http://docs.yottabuild.org/#installing).
-2. Clone this repository.
-3. Open the Sender and the Receiver folders in the terminal and run the command `yotta build` in each folder.
-4. Build files should be generated at "\build\bbc-microbit-classic-gcc\Source" within each of the folders.
-5. Copy the {project name}-combined.hex file to their respective Microbits.
-6. Start Playing!  
+2. Hit clone on this repo so you get a copy
+3. Open the folder in the terminal and run the command "yotta build" in the folder.
+4. Flash the {name}-combined.hex file onto your Microbit.
+5. Start Playing!
+You can find more information on yotta builds at this [link](http://docs.yottabuild.org/tutorial/building.html). 
 
 ## Micro:Bit Usage
 Sender Microbit will display the game world as the bird moves between pipes. \
@@ -71,26 +73,29 @@ crossing. This is shown on the receiver Microbit. The game speed increases as th
 progress.As soon a the bird crashes into a pipe the game will end and the receiver will\
 show the latest score. 
 
-## Warnings
+# FAQ
 Make sure that your crocodile cables are making a stable connection in order for it\
-to work properly and connected to the correct contacts. 
+to work properly and are connected to the correct contacts. If you come across an\
+issue with the microbit, try one of the following fixes:
 
-## Troubleshooting
-If you are unable to play the game try one of the following fixes:
+### How do we flash the hex onto the microbit?
+Plug your microbit into your computer so that it appears as a USB device.\
+Download the tracker.hex file in this repo and drag and drop onto the device.
 
 ### Game does not load
 Try to compile the hex or download the file and try again OR reset the microbit.\
 You can find the reset button located on the back.
 
-### Microbit is not detected on your computer
-Try using a different micro USB cable or connect it to a different computer.
+### Why won't my Microbit show on the computer?
+Check if the USB cable trasnfers data since some will only provide power. If that\
+doesn't work, try to connect it to a different computer.
 
-### Microbit won't power on
-Check to see if your micro USB cable works or if the batteries in the external\
-power pack need to be replaced.
+### Why won't my Microbit switch on?
+If your Microbit is powered on using a cable try to see if it's properly connected.\
+If it is then try a different cable. If you are connected to a battery pack try\
+replacing the batteries.
 
-### I have another issue 
-Please mail your enquiries to mariyam2.yasmeen@live.uwe.ac.uk or ismath2.ibrahim@live.uwe.ac.uk
+### If you have any enquiries, find a bug or just want to say hello mail us at
+mariyam2.yasmeen@live.uwe.ac.uk or ismath2.ibrahim@live.uwe.ac.uk
 
 # Have Fun!
-
